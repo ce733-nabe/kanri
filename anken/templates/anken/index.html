@@ -1,0 +1,13 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'anken/style.css' %}">
+
+{% if latest_anken_list %}
+    <ul>
+    {% for anken in latest_anken_list %}
+        <li>{{ anken.ankenmei }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No ankens are available.</p>
+{% endif %}
