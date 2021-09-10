@@ -5,7 +5,7 @@
 {% if latest_anken_list %}
     <ul>
     {% for anken in latest_anken_list %}
-        <li>{{ anken.ankenmei }}</li>
+        <li>{{ anken.ankenmei }}{{ anken.tantousha }}</li>
     {% endfor %}
     </ul>
 {% else %}
